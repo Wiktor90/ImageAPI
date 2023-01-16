@@ -1,0 +1,39 @@
+# ======= #
+# ENV #
+# ======= #
+venv/
+env/
+
+# ======= #
+# Editors #
+# ======= #
+*~
+*.swp
+.project
+.classpath
+.settings
+.metadata
+.idea
+.vscode
+.vs
+
+# ====== #git check-ignore -v -- afile
+# Python #
+# ====== #
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.pyc
+
+# ======================== #
+# Personal/Project choices #
+# ======================== #
+#media/
+.idea/
+snippets/__pycache__/
+tutorial/__pycache__/
+.__pycache__/
+
+# Django stuff:
+*.log
+*.pot
