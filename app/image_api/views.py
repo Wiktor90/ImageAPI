@@ -73,10 +73,3 @@ class ImageUploadsView(
 
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data)
-
-
-# TODO: !!!!!!!!!!!!!!!!!! TODO !!!!!!!!!!!!!!!
-
-# ---- Na KONIEC-----
-# zrobic repo w gicie i zauploadowac tam projekt.
-# WAZNE - zauploadowac razem z plikiem media i 0001 migracja !

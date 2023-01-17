@@ -6,13 +6,6 @@ Api is able to resize your image (if proper width/height parameter were passed)
 or just store image, in filestorage with its original dimensions. 
 Project as well persists images in DB.
 
-Detailed endpoint documentation is accessible in the link below. 
-You can check it just after making projest up and running:
-
-http://localhost:8000/swagger/
-
-http://localhost:8000/redoc/
-
 
 ## Run Project:
 
@@ -36,4 +29,22 @@ _Make sure you have **git** installed to be able to clone a repo._
 
 ## Sending API request
 App is browsable, so you can use built in DRF HTML to test API endpoints 
-in your browse. You can also use another tool like Postman.
+in your browse. You can also use another tool like Postman etc.
+
+Detailed endpoints documentation is accessible in the link below. 
+You can check it just after making projest up and running on your localhost:
+
+http://localhost:8000/swagger/
+
+http://localhost:8000/redoc/
+
+## File storage
+All file which are sent via POST request are stored in the `media/` directory.
+After upload the path to image will be automatically 
+generated as `media/images/{filename}`
+
+#### *comments*
+Inside the media file in the repo, there is a _placeholder.txt_. It is only because of
+that I had to create media folder from GitHub UI (because media dir was 
+in my .gitignore and didn't upload).
+Sorry for that quick fix but there is no impact on storage.
